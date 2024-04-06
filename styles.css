@@ -1,0 +1,284 @@
+body{
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(8, 54, 33);
+    
+}
+/* NUMBERS */
+.box {
+width: 40px;
+height: 50px;
+display: inline-block;
+margin: 10px;
+text-align: center;
+line-height: 38px;
+font-size: 24px;
+border-radius: 20% 20% 0 0;
+position: absolute;
+transform-origin: 45% 45%;
+color: white;
+box-shadow: 0 0 5px 5px black;
+
+}
+
+/* BALL */
+.box2 {
+width: 20px;
+height: 20px;
+display: inline-block;
+margin: 10px;
+text-align: center;
+font-size: 20px;
+border-radius: 50% ;
+position: absolute;
+transform-origin: 45% 45%;
+z-index: 0;
+}
+
+/*  BOX FOR THE BALL*/
+.box3 {
+width: 37px;
+height: 50px;
+background-image: linear-gradient(to bottom, #9c7b16,#e6b41e);
+display: inline-block;
+margin: 10px;
+text-align: center;
+box-shadow: inset 1px -1px 15px black;
+border-radius: 10% 10% 0 0;
+position: absolute;
+transform-origin: 45% 45%;
+border: 2px solid #47380a;
+z-index: -2;
+
+}
+#spinBtn{
+position: absolute;
+padding: 15px 30px;
+border-radius: 20px;
+font-size: 24px;
+background-color:black;
+color: white;
+box-shadow: 0 0 12px white;
+top: 820px;
+left: 370px;
+cursor: pointer;
+}
+.hidden{
+    visibility:hidden;
+}
+#spinBtn:hover{
+background-color: rgb(248, 248, 248);
+color: black;
+}
+.container {
+position: absolute;
+background-color: #751505;
+width: 700px; 
+height: 700px; 
+margin: 50px;
+transform-origin: center;
+border-radius: 50%;
+box-shadow: inset 0 0 200px 60px rgb(0, 0, 0);
+
+
+}
+.circle{
+position: absolute;
+top:45%;
+left: 46%;
+transform: translate(-50%, -50%);
+animation: none;
+background-color: aliceblue;
+transform-origin: center;
+}
+
+/*  EVERY NUMBER PLACEMENT*/
+.box:nth-child(1) { transform: rotate(0deg) translate(260px) rotate(90deg); }
+.box:nth-child(2) { transform: rotate(9.73deg) translate(260px) rotate(90deg); }
+.box:nth-child(3) { transform: rotate(19.46deg) translate(260px) rotate(90deg); }
+.box:nth-child(4) { transform: rotate(29.19deg) translate(260px) rotate(90deg); }
+.box:nth-child(5) { transform: rotate(38.92deg) translate(260px) rotate(90deg); }
+.box:nth-child(6) { transform: rotate(48.65deg) translate(260px) rotate(90deg); }
+.box:nth-child(7) { transform: rotate(58.38deg) translate(260px) rotate(90deg); }
+.box:nth-child(8) { transform: rotate(68.11deg) translate(260px) rotate(90deg); }
+.box:nth-child(9) { transform: rotate(77.84deg) translate(260px) rotate(90deg); }
+.box:nth-child(10) { transform: rotate(87.57deg) translate(260px) rotate(90deg); }
+.box:nth-child(11) { transform: rotate(97.3deg) translate(260px) rotate(90deg); }
+.box:nth-child(12) { transform: rotate(107.03deg) translate(260px) rotate(90deg); }
+.box:nth-child(13) { transform: rotate(116.76deg) translate(260px) rotate(90deg); }
+.box:nth-child(14) { transform: rotate(126.49deg) translate(260px) rotate(90deg); }
+.box:nth-child(15) { transform: rotate(136.22deg) translate(260px) rotate(90deg); }
+.box:nth-child(16) { transform: rotate(145.95deg) translate(260px) rotate(90deg); }
+.box:nth-child(17) { transform: rotate(155.68deg) translate(260px) rotate(90deg); }
+.box:nth-child(18) { transform: rotate(165.41deg) translate(260px) rotate(90deg); }
+.box:nth-child(19) { transform: rotate(175.14deg) translate(260px) rotate(90deg); }
+.box:nth-child(20) { transform: rotate(184.87deg) translate(260px) rotate(90deg); }
+.box:nth-child(21) { transform: rotate(194.6deg) translate(260px) rotate(90deg); }
+.box:nth-child(22) { transform: rotate(204.33deg) translate(260px) rotate(90deg); }
+.box:nth-child(23) { transform: rotate(214.06deg) translate(260px) rotate(90deg); }
+.box:nth-child(24) { transform: rotate(223.79deg) translate(260px) rotate(90deg); }
+.box:nth-child(25) { transform: rotate(233.52deg) translate(260px) rotate(90deg); }
+.box:nth-child(26) { transform: rotate(243.25deg) translate(260px) rotate(90deg); }
+.box:nth-child(27) { transform: rotate(252.98deg) translate(260px) rotate(90deg); }
+.box:nth-child(28) { transform: rotate(262.71deg) translate(260px) rotate(90deg); }
+.box:nth-child(29) { transform: rotate(272.44deg) translate(260px) rotate(90deg); }
+.box:nth-child(30) { transform: rotate(282.17deg) translate(260px) rotate(90deg); }
+.box:nth-child(31) { transform: rotate(291.9deg) translate(260px) rotate(90deg); }
+.box:nth-child(32) { transform: rotate(301.63deg) translate(260px) rotate(90deg); }
+.box:nth-child(33) { transform: rotate(311.36deg) translate(260px) rotate(90deg); }
+.box:nth-child(34) { transform: rotate(321.09deg) translate(260px) rotate(90deg); }
+.box:nth-child(35) { transform: rotate(330.82deg) translate(260px) rotate(90deg); }
+.box:nth-child(36) { transform: rotate(340.55deg) translate(260px) rotate(90deg); }
+.box:nth-child(37) { transform: rotate(350.28deg) translate(260px) rotate(90deg); }
+
+
+/*  BALL MOVEMENT */
+
+
+.box2:nth-child(1) { transform: rotate(0deg) translate(212px) rotate(90deg); }
+.box2:nth-child(2) { transform: rotate(9.73deg) translate(212px) rotate(90deg); }
+.box2:nth-child(3) { transform: rotate(19.46deg) translate(212px) rotate(90deg); }
+.box2:nth-child(4) { transform: rotate(29.19deg) translate(212px) rotate(90deg); }
+.box2:nth-child(5) { transform: rotate(38.92deg) translate(212px) rotate(90deg); }
+.box2:nth-child(6) { transform: rotate(48.65deg) translate(212px) rotate(90deg); }
+.box2:nth-child(7) { transform: rotate(58.38deg) translate(212px) rotate(90deg); }
+.box2:nth-child(8) { transform: rotate(68.11deg) translate(212px) rotate(90deg); }
+.box2:nth-child(9) { transform: rotate(77.84deg) translate(212px) rotate(90deg); }
+.box2:nth-child(10) { transform: rotate(87.57deg) translate(212px) rotate(90deg); }
+.box2:nth-child(11) { transform: rotate(97.3deg) translate(212px) rotate(90deg); }
+.box2:nth-child(12) { transform: rotate(107.03deg) translate(212px) rotate(90deg); }
+.box2:nth-child(13) { transform: rotate(116.76deg) translate(212px) rotate(90deg); }
+.box2:nth-child(14) { transform: rotate(126.49deg) translate(212px) rotate(90deg); }
+.box2:nth-child(15) { transform: rotate(136.22deg) translate(212px) rotate(90deg); }
+.box2:nth-child(16) { transform: rotate(145.95deg) translate(212px) rotate(90deg); }
+.box2:nth-child(17) { transform: rotate(155.68deg) translate(212px) rotate(90deg); }
+.box2:nth-child(18) { transform: rotate(165.41deg) translate(212px) rotate(90deg); }
+.box2:nth-child(19) { transform: rotate(175.14deg) translate(212px) rotate(90deg); }
+.box2:nth-child(20) { transform: rotate(184.87deg) translate(212px) rotate(90deg); }
+.box2:nth-child(21) { transform: rotate(194.6deg) translate(212px) rotate(90deg); }
+.box2:nth-child(22) { transform: rotate(204.33deg) translate(212px) rotate(90deg); }
+.box2:nth-child(23) { transform: rotate(214.06deg) translate(212px) rotate(90deg); }
+.box2:nth-child(24) { transform: rotate(223.79deg) translate(212px) rotate(90deg); }
+.box2:nth-child(25) { transform: rotate(233.52deg) translate(212px) rotate(90deg); }
+.box2:nth-child(26) { transform: rotate(243.25deg) translate(212px) rotate(90deg); }
+.box2:nth-child(27) { transform: rotate(252.98deg) translate(212px) rotate(90deg); }
+.box2:nth-child(28) { transform: rotate(262.71deg) translate(212px) rotate(90deg); }
+.box2:nth-child(29) { transform: rotate(272.44deg) translate(212px) rotate(90deg); }
+.box2:nth-child(30) { transform: rotate(282.17deg) translate(212px) rotate(90deg); }
+.box2:nth-child(31) { transform: rotate(291.9deg) translate(212px) rotate(90deg); }
+.box2:nth-child(32) { transform: rotate(301.63deg) translate(212px) rotate(90deg); }
+.box2:nth-child(33) { transform: rotate(311.36deg) translate(212px) rotate(90deg); }
+.box2:nth-child(34) { transform: rotate(321.09deg) translate(212px) rotate(90deg); }
+.box2:nth-child(35) { transform: rotate(330.82deg) translate(212px) rotate(90deg); }
+.box2:nth-child(36) { transform: rotate(340.55deg) translate(212px) rotate(90deg); }
+.box2:nth-child(37) { transform: rotate(350.28deg) translate(212px) rotate(90deg); }
+
+/*  EVERY BOX FOR THE BALL PLACEMENT*/
+
+
+.box3:nth-child(1) { transform: rotate(0deg) translate(208px) rotate(90deg); }
+.box3:nth-child(2) { transform: rotate(9.73deg) translate(208px) rotate(90deg); }
+.box3:nth-child(3) { transform: rotate(19.46deg) translate(208px) rotate(90deg); }
+.box3:nth-child(4) { transform: rotate(29.19deg) translate(208px) rotate(90deg); }
+.box3:nth-child(5) { transform: rotate(38.92deg) translate(208px) rotate(90deg); }
+.box3:nth-child(6) { transform: rotate(48.65deg) translate(208px) rotate(90deg); }
+.box3:nth-child(7) { transform: rotate(58.38deg) translate(208px) rotate(90deg); }
+.box3:nth-child(8) { transform: rotate(68.11deg) translate(208px) rotate(90deg); }
+.box3:nth-child(9) { transform: rotate(77.84deg) translate(208px) rotate(90deg); }
+.box3:nth-child(10) { transform: rotate(87.57deg) translate(208px) rotate(90deg); }
+.box3:nth-child(11) { transform: rotate(97.3deg) translate(208px) rotate(90deg); }
+.box3:nth-child(12) { transform: rotate(107.03deg) translate(208px) rotate(90deg); }
+.box3:nth-child(13) { transform: rotate(116.76deg) translate(208px) rotate(90deg); }
+.box3:nth-child(14) { transform: rotate(126.49deg) translate(208px) rotate(90deg); }
+.box3:nth-child(15) { transform: rotate(136.22deg) translate(208px) rotate(90deg); }
+.box3:nth-child(16) { transform: rotate(145.95deg) translate(208px) rotate(90deg); }
+.box3:nth-child(17) { transform: rotate(155.68deg) translate(208px) rotate(90deg); }
+.box3:nth-child(18) { transform: rotate(165.41deg) translate(208px) rotate(90deg); }
+.box3:nth-child(19) { transform: rotate(175.14deg) translate(208px) rotate(90deg); }
+.box3:nth-child(20) { transform: rotate(184.87deg) translate(208px) rotate(90deg); }
+.box3:nth-child(21) { transform: rotate(194.6deg) translate(208px) rotate(90deg); }
+.box3:nth-child(22) { transform: rotate(204.33deg) translate(208px) rotate(90deg); }
+.box3:nth-child(23) { transform: rotate(214.06deg) translate(208px) rotate(90deg); }
+.box3:nth-child(24) { transform: rotate(223.79deg) translate(208px) rotate(90deg); }
+.box3:nth-child(25) { transform: rotate(233.52deg) translate(208px) rotate(90deg); }
+.box3:nth-child(26) { transform: rotate(243.25deg) translate(208px) rotate(90deg); }
+.box3:nth-child(27) { transform: rotate(252.98deg) translate(208px) rotate(90deg); }
+.box3:nth-child(28) { transform: rotate(262.71deg) translate(208px) rotate(90deg); }
+.box3:nth-child(29) { transform: rotate(272.44deg) translate(208px) rotate(90deg); }
+.box3:nth-child(30) { transform: rotate(282.17deg) translate(208px) rotate(90deg); }
+.box3:nth-child(31) { transform: rotate(291.9deg) translate(208px) rotate(90deg); }
+.box3:nth-child(32) { transform: rotate(301.63deg) translate(208px) rotate(90deg); }
+.box3:nth-child(33) { transform: rotate(311.36deg) translate(208px) rotate(90deg); }
+.box3:nth-child(34) { transform: rotate(321.09deg) translate(208px) rotate(90deg); }
+.box3:nth-child(35) { transform: rotate(330.82deg) translate(208px) rotate(90deg); }
+.box3:nth-child(36) { transform: rotate(340.55deg) translate(208px) rotate(90deg); }
+.box3:nth-child(37) { transform: rotate(350.28deg) translate(208px) rotate(90deg); }
+
+/*  WINNING NUMBER*/
+#output{
+display: none;
+width: 150px;
+height: 150px;
+background-color: rgb(212, 209, 18);
+position: absolute;
+left: 62%;
+top: 65%;
+border-radius: 25%;
+font-size: 3.7rem;
+font-weight: 700;
+text-align: center;
+line-height: 150px;
+}
+
+.blink {
+animation: blink 1s infinite;
+}
+.winningNumber{
+    background-color: orange;
+color: black;
+}
+@keyframes blink {
+0% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.transparent{
+    background-color: transparent;
+}
+
+.spin {
+animation: spin 15s infinite; 
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+img{
+position: absolute;
+top: -72px;
+left: -71px;
+transform: rotate(8deg);
+border: 3px solid yellow;
+border-radius: 50%;
+width: 200px;
+height: 200px;
+z-index: 0;
+
+}
+
+.circle2{
+left: 330px;
+top: 330px;
+z-index: 1;
+}
+
+.circle3{
+left: 322px;
+top: 315px;
+z-index: 0;
+}
