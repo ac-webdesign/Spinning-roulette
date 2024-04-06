@@ -56,11 +56,8 @@ var intervalId = setInterval(changeColor, 10);
 
             clearInterval(intervalId);
 
-            // stoppedBox.classList.add('blink');
-            // stoppedBox.style.color='black';
-            // stoppedBox.style.backgroundColor='orange';
-
             boxes[currentIndex-1].classList.add('blink');
+            boxes[currentIndex-1].classList.add('winningNumber');
 
         }, 10000);   
         setTimeout(function() {
@@ -69,6 +66,7 @@ var intervalId = setInterval(changeColor, 10);
             boxes[currentIndex-1].classList.remove('blink');
             document.getElementById('output').style.display = 'none';
             document.getElementById('spinBtn').classList.remove('hidden');
+            boxes[currentIndex-1].classList.remove('winningNumber');
 
         }, 15000);   
 

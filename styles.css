@@ -236,8 +236,7 @@ line-height: 150px;
 animation: blink 1s infinite;
 }
 .winningNumber{
-    background-color: orange;
-color: black;
+    background-color: yellow;
 }
 @keyframes blink {
 0% { opacity: 1; }
